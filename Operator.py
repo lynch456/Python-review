@@ -99,20 +99,31 @@ print("")
 print("")
 # 논리 연산자 2
 # 아이디와 비밀번호를 입력받고 입력 받은 아이디가 'busan', 비밀번호가 '1234'로 모두 같아야 참이되는 조건식을 작성하시오.
-id = input("ID : ")
-password = int(input("비밀번호 : "))
-print(id == 'busan' and password == 1234)
+# id = input("ID : ")
+# password = int(input("비밀번호 : "))
+# print(id == 'busan' and password == 1234)
 
 
 print("")
 # 논리 연산자 3
 # 나이를 입력받고 입력받은 나이가 7세 이하이거나 65세 이상이면 참이되는 조건식을 작성하시오.
+# age = int(input("나이를 입력하시오 : "))
+# print(age <= 7 or age >= 65)
 
-
-print("")
+# print("")
 # 논리 연산자 4
 # 연도를 입력 받고 입력받은 연도가 4의 배수이면서 100의 배수가 아니고 400의 배수일 때 참이되는 조건식을 작성하시오.
-
+year = int(input("연도를 입력하시오 : "))
+# print(year % 4 == 0 and year % 400 == 0) or year % 100 == 0
+# print(year % 4 == 0 or year % 100 != 0) and year % 400 == 0
+# print(year % 4 == 0 and year % 100 != 0) or year % 400 == 0
+# print(year % 4 == 0 and year % 100 != 0) and year % 400 == 0
+# year = int(input("연도를 입력하시오 : "))
+# print(year)
+# if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+#     print(1)
+# else:
+#     print(0)
 
 print("")
 # 시퀀스 연산자
@@ -123,7 +134,9 @@ print("")
 print("")
 # 시퀀스 연산자 1
 # 두 문자열을 입력받고 입력받은 문자열을 ' '(공백)으로 연결하여 출력하시오.
-
+str1 = input("첫번째 문자열: ")
+str1 = input("두번째 문자열: ")
+print()
 
 print("")
 # 시퀀스 연산자 2
