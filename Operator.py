@@ -113,7 +113,7 @@ print("")
 # print("")
 # 논리 연산자 4
 # 연도를 입력 받고 입력받은 연도가 4의 배수이면서 100의 배수가 아니고 400의 배수일 때 참이되는 조건식을 작성하시오.
-year = int(input("연도를 입력하시오 : "))
+# year = int(input("연도를 입력하시오 : "))
 # print(year % 4 == 0 and year % 400 == 0) or year % 100 == 0
 # print(year % 4 == 0 or year % 100 != 0) and year % 400 == 0
 # print(year % 4 == 0 and year % 100 != 0) or year % 400 == 0
@@ -134,14 +134,15 @@ print("")
 print("")
 # 시퀀스 연산자 1
 # 두 문자열을 입력받고 입력받은 문자열을 ' '(공백)으로 연결하여 출력하시오.
-str1 = input("첫번째 문자열: ")
-str1 = input("두번째 문자열: ")
-print()
+# str1, str2 = input("첫번째 문자열 과 두번째 문자열 : ").split()
+# print("{} {}".format(str1, str2))
 
-print("")
+
 # 시퀀스 연산자 2
 # 문자열과 정수를 입력받고 입력받은 문자열을 정수 횟수만큼 반복연결시켜 출력하시오.
-
+# str1 = input("문자열을 입력하시오 : ")
+# int1 = int(input("정수를 입력하시오 : "))
+# print(str1*int1)
 
 print("")
 # 삼항 연산자
@@ -151,13 +152,21 @@ print("")
 print("")
 # 삼항 연산자 1
 # 나이를 입력받고 입력받은 나이가 19세 이상이면 성인, 아니면 미성년자를 출력하시오.
+# age = int(input("나이를 입력하시오 : "))
+# age2 = "성인" if age >= 19 else "미성년자"
+# print(age2)
 
 
 print("")
 # 삼항 연산자 2
 # 0~23 까지의 수를 입력받고 12이상이면 오전, 아니면 오후를 출력하시오.
-
+# number = int(input("0~23까지의 수를 입력하시오 : "))
+# number2 = "오전" if number >= 12 else "오후"
+# print(number2)
 
 print("")
 # 삼항 연산자 3
 # 정수를 입력받고 입력받은 정수가 5의 배수면 '5의 배수', 아니면 '5의 배수가 아님'을 출력하시오.
+n = int(input("정수를 입력하시오 : "))
+n2 = "5의 배수" if n % 5 == 0 else "5의 배수가 아님"
+print(n2)
