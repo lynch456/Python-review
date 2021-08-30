@@ -48,38 +48,56 @@ print("")
 print("")
 # 리스트 기능 예제 1
 # 점수를 저장할 빈 리스트를 만들고 국어 점수, 영어 점수, 수학 점수를 각각 입력받고 점수 리스트에 저장한 후 출력하시오.
-
-korea = int(input("국어 점수 : "))
-english = int(input("영어 점수 : "))
-math = int(input("수학 점수 : "))
-score = []
-score.append(korea)
-score.append(english)
-score.append(math)
-print(score)
+# score = []
+# korea = int(input("국어 점수 : "))
+# english = int(input("영어 점수 : "))
+# math = int(input("수학 점수 : "))
+# score.append(f"국어 점수 : {korea}")
+# score.append(f"국어 점수 : {english}")
+# score.append(f"국어 점수 : {math}")
+# print(score)
 
 print("")
 # 리스트 기능 예제 2
 # 리스트 기능 예제 1에서 작성한 점수 리스트에서 수학 점수를 5점 증가시킨 값으로 수정하고 리스트를 출력하시오.
-
+# score = []
+# korea = int(input("국어 점수 : "))
+# english = int(input("영어 점수 : "))
+# math = int(input("수학 점수 : "))
+# score.append(f"국어 점수 : {korea}")
+# score.append(f"국어 점수 : {english}")
+# score.append(f"국어 점수 : {math+5}")
+# print(score)
 
 print("")
 # 리스트 기능 예제 3
 # 상품 구매 목록 리스트를 빈 리스트로 생성하고 ['비타민C', '오메가3', '홍삼', '종합 비타민']을 확장으로 추가하고 출력하시오.
-
+# buy_goods = []
+# buy_goods.extend(['비타민C', '오메가3', '홍삼', '종합 비타민'])
+# print(buy_goods)
 
 print("")
 # 리스트 기능 예제 4
 # 리스트 기능 예제 3에서 생성한 상품 구매 목록 리스트에서 비타민C를 제거한 리스트를 출력하시오.
 
 # del 키워드 사용
-
+buy_goods = []
+buy_goods.extend(['비타민C', '오메가3', '홍삼', '종합 비타민'])
+del buy_goods[0]
+print(buy_goods)
 
 # .pop(idx) 사용
+goods = []
+goods.extend(['비타민C', '오메가3', '홍삼', '종합 비타민'])
+goods.pop(0)
+print(goods)
 
 
 # .remove(value) 사용
-
+buy_goods = []
+buy_goods.extend(['비타민C', '오메가3', '홍삼', '종합 비타민'])
+buy_goods.remove('비타민C')
+print(buy_goods)
 
 print("")
 # 오름차순 정렬 : 리스트명.sort()
