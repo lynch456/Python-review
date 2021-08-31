@@ -110,9 +110,9 @@ print("")
 print("")
 # 리스트 기능 예제 5
 # 978회 로또 번호는 [7, 15, 34, 1, 32, 42]이다. 로또 번호 리스트를 오름차순으로 정렬하고 출력하시오.
-lotto = [7, 15, 34, 1, 32, 42]
-lotto.sort()
-print(lotto)
+# lotto = [7, 15, 34, 1, 32, 42]
+# lotto.sort()
+# print(lotto)
 
 print("")
 # 리스트 기능 예제 6
@@ -120,11 +120,24 @@ print("")
 # 대구에 몇번 방문했는지 구하고 출력하시오.
 place = ['대구', '진주', '경주', '대구', '서울', '용인', '서울', '대구', '부산']
 place.count('대구')
-print(f"대구에는 몇 번 갔습니까 : {place.count('대구')}")
+place.count('진주')
+place.count('경주')
+place.count('서울')
+place.count('용인')
+place.count('부산')
+print(f"대구에는 몇 번 갔습니까 : {place.count('대구')}번")
 
 print("")
 # 리스트 기능 예제 7
 # 리스트 기능 예제 6에서 방문한 출장지를 몇곳을 방문했는지 중복을 허용해서 구하고 출력하시오.
+# print(f"대구에는 몇 번 갔습니까 : {place.count('대구')}번")
+# print(f"진주에는 몇 번 갔습니까 : {place.count('진주')}번")
+# print(f"경주에는 몇 번 갔습니까 : {place.count('경주')}번")
+# print(f"서울에는 몇 번 갔습니까 : {place.count('서울')}번")
+# print(f"용인에는 몇 번 갔습니까 : {place.count('용인')}번")
+# print(f"부산에는 몇 번 갔습니까 : {place.count('부산')}번")
+# place2 = place.count('대구')
+# print(f"대구에는 {place2}번 갔음")
 
 
 print("")
