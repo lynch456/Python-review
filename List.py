@@ -138,7 +138,8 @@ print("")
 # print(f"부산에는 몇 번 갔습니까 : {place.count('부산')}번")
 # place2 = place.count('대구')
 # print(f"대구에는 {place2}번 갔음")
-
+length = len(place)
+print(length)
 
 print("")
 # 다차원 리스트
@@ -152,8 +153,11 @@ print("")
 # 3개의 프로그래밍언어
 # ['파이썬', 'Python', '보통'], ['자바', 'Java', '조금 어려움'], ['씨 언어', 'C Language', '매우 어려움']를 저장하는
 # 리스트를 작성하고 출력하시오.
-
-
+li = [['파이썬', 'Python', '보통'], ['자바', 'Java', '조금 어려움'],
+      ['씨 언어', 'C Language', '매우 어려움']]
+print(li)
 print("")
 # 다차원 리스트 예제 2
 # 다차원 리스트 예제 1에서 작성한 리스트에서 2번째 리스트의 3번째 값을 구하고 출력하시오.
+
+print(li[1][2])

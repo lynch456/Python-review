@@ -114,11 +114,11 @@ print("")
 # 논리 연산자 4
 # 연도를 입력 받고 입력받은 연도가 4의 배수이면서 100의 배수가 아니고 400의 배수일 때 참이되는 조건식을 작성하시오.
 # year = int(input("연도를 입력하시오 : "))
-# print(year % 4 == 0 and year % 400 == 0) or year % 100 == 0
-# print(year % 4 == 0 or year % 100 != 0) and year % 400 == 0
-# print(year % 4 == 0 and year % 100 != 0) or year % 400 == 0
-# print(year % 4 == 0 and year % 100 != 0) and year % 400 == 0
-# year = int(input("연도를 입력하시오 : "))
+# # print(year % 4 == 0 and year % 400 == 0) or year % 100 == 0
+# # print(year % 4 == 0 or year % 100 != 0) and year % 400 == 0
+# print(year % 4 == 0) and (year % 100 != 0) or year % 400 == 0
+# # print(year % 4 == 0 and year % 100 != 0) and year % 400 == 0
+# # year = int(input("연도를 입력하시오 : "))
 # print(year)
 # if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
 #     print(1)
@@ -167,6 +167,6 @@ print("")
 print("")
 # 삼항 연산자 3
 # 정수를 입력받고 입력받은 정수가 5의 배수면 '5의 배수', 아니면 '5의 배수가 아님'을 출력하시오.
-n = int(input("정수를 입력하시오 : "))
-n2 = "5의 배수" if n % 5 == 0 else "5의 배수가 아님"
-print(n2)
+# n = int(input("정수를 입력하시오 : "))
+# n2 = "5의 배수" if n % 5 == 0 else "5의 배수가 아님"
+# print(n2)
