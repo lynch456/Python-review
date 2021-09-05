@@ -133,22 +133,22 @@ print("")
 # 23이상 25미만은 '과체중', 25이상 30미만은 '비만 1단계'
 # 30이상 40미만은 '비만 2단계', 40이상은 '심각한 비만'을 출력하시오.
 
-weight = float(input("몸무게를 입력하시오 : "))
-height = float(input("키를 입력하시오 : "))
-bmi = weight / (height ** 2)
-print(f"bmi 지수 : {bmi}")
-if bmi < 18.5:
-    print("저체중")
-elif bmi >= 18.5 and bmi < 23:
-    print("정상")
-elif bmi >= 23 and bmi < 25:
-    print("과체중")
-elif bmi >= 25 and bmi < 30:
-    print("비만 1단계")
-elif bmi >= 30 and bmi < 40:
-    print("비만 2단계")
-elif bmi > 40:
-    print("심각한 비만")
+# weight = float(input("몸무게를 입력하시오 : "))
+# height = float(input("키를 입력하시오 : "))
+# bmi = weight / (height ** 2)
+# print(f"bmi 지수 : {bmi}")
+# if bmi < 18.5:
+#     print("저체중")
+# elif bmi >= 18.5 and bmi < 23:
+#     print("정상")
+# elif bmi >= 23 and bmi < 25:
+#     print("과체중")
+# elif bmi >= 25 and bmi < 30:
+#     print("비만 1단계")
+# elif bmi >= 30 and bmi < 40:
+#     print("비만 2단계")
+# elif bmi > 40:
+#     print("심각한 비만")
 
 
 print("")
@@ -160,6 +160,16 @@ print("")
 # 경로우대자(65세 이상) : 무임
 # 나이를 입력받고 해당하는 나이의 지하철 운행 교통카드 요금을 출력하시오.
 
+# age = int(input("나이를 입력하십시오 : "))
+# if age >= 19 and age < 65:
+#     print(f"성인입니다. 요금은 1300원 입니다.")
+# elif age >= 13 and age <= 18:
+#     print("청소년 입니다. 요금은 1050원 입니다.")
+# elif age <= 12:
+#     print("어린이 입니다. 요금은 650원 입니다.")
+# else:
+#     print("경로우대자 입니다. 요금은 없습니다.")
+
 
 print("")
 # 중첩 사용
@@ -169,7 +179,27 @@ print("")
 # 79~70점은 C, 69~60은 D, 60~0점은 F,
 # 100점 초과 0점 미만은 '잘못된 입력' 을 출력하시오.
 # 단, F를 제외한 나머지 학점에서 5점 이상이면 +를 추가하여 출력하시오.
-
+grades = int(input("성적을 입력하시오 : "))
+if grades <= 100 and grades >= 90:
+    print("학점 : A")
+    if grades >= 95:
+        print("학점 : A+")
+elif grades <= 89 and grades >= 80:
+    print("학점 : B")
+    if grades >= 85:
+        print("학점 : B+")
+elif grades <= 79 and grades >= 70:
+    print("학점 : C")
+    if grades >= 75:
+        print("학점 : C+")
+elif grades <= 69 and grades >= 60:
+    print("학점 : D")
+    if grades >= 65:
+        print("학점 : D+")
+elif grades <= 60 and grades >= 0:
+    print("학점은 : F")
+else:
+    print("잘못된 입력")
 
 print("")
 # if elif 문 예제 5
