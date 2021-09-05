@@ -28,27 +28,34 @@ print("")
 # if 문 예제 1
 # 월을 입력 받아 해당 계절을 출력하시오.
 # 3~5 : 봄, 6~8 : 여름, 9~11: 가을, 12~2: 겨울
-weather = int(input("월을 입력하시오 : "))
-if weather >= 3 and weather <= 5:
-    print("봄")
-if weather >= 6 and weather <= 8:
-    print("여름")
-if weather >= 9 and weather <= 11:
-    print("가을")
-if weather == 12 and weather == 1 and weather == 2:
-    print("겨울")
+# weather = int(input("월을 입력하시오 : "))
+# if weather >= 3 and weather <= 5:
+#     print("봄")
+# if weather >= 6 and weather <= 8:
+#     print("여름")
+# if weather >= 9 and weather <= 11:
+#     print("가을")
+# if weather == 12 and weather == 1 and weather == 2:
+#     print("겨울")
 
 print("")
 # if 문 예제 2
 # 1 또는 2를 입력받아 열차의 좌석 종류를 출력하시오.
 # 1 : 일반실, 2 : 특실
-
+# train = int(input("좌석 종류 : "))
+# if train == 1:
+#     print("일반실")
+# if train == 2:
+#     print("특실")
 
 print("")
 # if 문 예제 3
 # 정수를 입력받아 입력받은 수가 4의 배수이면 '4의 배수', 5의 배수이면 '5의 배수'를 출력하시오.
-
-
+# n = int(input("정수입력 : "))
+# if n % 4 == 0:
+#     print("4의 배수")
+# if n % 5 == 0:
+#     print("5의 배수")
 print("")
 # if else 문
 # 이분법적 논리가 적용되는 경우 사용
@@ -63,7 +70,11 @@ print("")
 print("")
 # if else 문 예제 1
 # 체온을 입력받아 체온이 36.3도 이상 36.7도 이하이면 '정상'을, 아니면 '주의'를 출력하시오.
-
+# tem = float(input("체온을 입력하시오 : "))
+# if tem >= 36.3 and tem <= 36.7:
+#     print("정상")
+# else:
+#     print("주의")
 
 print("")
 # if else 문 예제 2
@@ -71,7 +82,14 @@ print("")
 # 공식은 몸무게 / (신장 ** 2) 이다. 단, 신장은 m 단위
 # 몸무게와 키를 입력받고
 # 18.5이상 22.9이하면 '정상', 아니면 '관리 필요'를 출력하시오.
-
+# weight = float(input("몸무게 : "))
+# height = float(input("키     : "))
+# BMI = weight / (height ** 2)
+# print(f"BMI 수치는? {BMI}")
+# if BMI >= 18.5 and BMI <= 22.9:
+#     print("정상")
+# else:
+#     print("관리필요")
 
 print("")
 # if elif 문
@@ -91,6 +109,19 @@ print("")
 # 성적을 입력받아 100~90점 이상은 A, 89~80점은 B
 # 79~70점은 C, 69~60은 D, 60~0점은 F,
 # 100점 초과 0점 미만은 '잘못된 입력' 을 출력하시오.
+# grades = int(input("성적을 입력하시오 : "))
+# if grades <= 100 and grades >= 90:
+#     print("학점 : A")
+# elif grades <= 89 and grades >= 80:
+#     print("학점 : B")
+# elif grades <= 79 and grades >= 70:
+#     print("학점은 : C")
+# elif grades <= 69 and grades >= 60:
+#     print("학점은 : D")
+# elif grades <= 60 and grades >= 0:
+#     print("학점은 : F")
+# else:
+#     print("잘못된 입력")
 
 
 print("")
@@ -101,6 +132,23 @@ print("")
 # 18.5미만은 '저체중', 18.5이상 23미만이면 '정상',
 # 23이상 25미만은 '과체중', 25이상 30미만은 '비만 1단계'
 # 30이상 40미만은 '비만 2단계', 40이상은 '심각한 비만'을 출력하시오.
+
+weight = float(input("몸무게를 입력하시오 : "))
+height = float(input("키를 입력하시오 : "))
+bmi = weight / (height ** 2)
+print(f"bmi 지수 : {bmi}")
+if bmi < 18.5:
+    print("저체중")
+elif bmi >= 18.5 and bmi < 23:
+    print("정상")
+elif bmi >= 23 and bmi < 25:
+    print("과체중")
+elif bmi >= 25 and bmi < 30:
+    print("비만 1단계")
+elif bmi >= 30 and bmi < 40:
+    print("비만 2단계")
+elif bmi > 40:
+    print("심각한 비만")
 
 
 print("")
