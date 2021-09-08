@@ -179,27 +179,28 @@ print("")
 # 79~70점은 C, 69~60은 D, 60~0점은 F,
 # 100점 초과 0점 미만은 '잘못된 입력' 을 출력하시오.
 # 단, F를 제외한 나머지 학점에서 5점 이상이면 +를 추가하여 출력하시오.
-grades = int(input("성적을 입력하시오 : "))
-if grades <= 100 and grades >= 90:
-    print("학점 : A")
-    if grades >= 95:
-        print("학점 : A+")
-elif grades <= 89 and grades >= 80:
-    print("학점 : B")
-    if grades >= 85:
-        print("학점 : B+")
-elif grades <= 79 and grades >= 70:
-    print("학점 : C")
-    if grades >= 75:
-        print("학점 : C+")
-elif grades <= 69 and grades >= 60:
-    print("학점 : D")
-    if grades >= 65:
-        print("학점 : D+")
-elif grades <= 60 and grades >= 0:
-    print("학점은 : F")
-else:
-    print("잘못된 입력")
+# grades = int(input("성적을 입력하시오 : "))
+# if grades <= 100 and grades >= 90:
+#     if grades >= 95:    
+#     print("학점 : A")
+# else:
+#     print("학점 : A+")
+# elif grades <= 89 and grades >= 80:
+#     print("학점 : B")
+#     if grades >= 85:
+#         print("학점 : B+")
+# elif grades <= 79 and grades >= 70:
+#     print("학점 : C")
+#     if grades >= 75:
+#         print("학점 : C+")
+# elif grades <= 69 and grades >= 60:
+#     print("학점 : D")
+#     if grades >= 65:
+#         print("학점 : D+")
+# elif grades <= 60 and grades >= 0:
+#     print("학점은 : F")
+# else:
+#     print("잘못된 입력")
 
 print("")
 # if elif 문 예제 5
@@ -214,3 +215,23 @@ print("")
 # 청소년 : 1구간 요금 + 150원
 # 어린이 : 1구간 요금 + 100원
 # 나이와 구간을 입력받고 해당하는 지하철 운행 교통카드 요금을 출력하시오.
+age = int(input("나이 입력 : "))
+section = input("구간 입력 : ")
+if 65 > age >= 19:
+    if section == "1구간":
+        charge = 1300
+    if section == "2구간":
+        charge = 1300+200
+elif 18 >= age >= 13:
+    if section == "1구간":
+        charge = 1050
+    if section == "2구간":
+        charge = 1050+150
+elif 12 >= age:
+    if section == "1구간":
+        charge = 650
+    if section == "2구간":
+        charge = 650+100
+else:
+    print("요금이 없습니다")
+print(charge)
