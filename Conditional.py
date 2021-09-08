@@ -217,21 +217,26 @@ print("")
 # 나이와 구간을 입력받고 해당하는 지하철 운행 교통카드 요금을 출력하시오.
 age = int(input("나이 입력 : "))
 section = input("구간 입력 : ")
+fee1 = 1300
+fee2 = 1050
+fee3 = 650
 if 65 > age >= 19:
     if section == "1구간":
-        charge = 1300
-    if section == "2구간":
-        charge = 1300+200
+        charge = (f"{section} 요금은 {fee1}원 입니다.")
+    else:
+        charge = (f"{section} 요금은 {fee1+200}원 입니다.")
+    print(charge)
 elif 18 >= age >= 13:
     if section == "1구간":
-        charge = 1050
-    if section == "2구간":
-        charge = 1050+150
+        charge = (f"{section} 요금은 {fee2}원 입니다.")
+    else:
+        charge = (f"{section} 요금은 {fee2+150}원 입니다.")
+    print(charge)
 elif 12 >= age:
     if section == "1구간":
-        charge = 650
-    if section == "2구간":
-        charge = 650+100
+        charge = (f"{section} 요금은 {fee3}원 입니다.")
+    else:
+        charge = (f"{section} 요금은 {fee3+100}원 입니다.")
+    print(charge)
 else:
-    print("요금이 없습니다")
-print(charge)
+    print(f"{section} 무임입니다.")

@@ -20,16 +20,19 @@ print("")
 # 시퀀스 자료형에서의 for
 # 시퀀스 자료형 : 순서가 있는(인덱스가 존재하는) 객체 (list, tuple, string, range)
 # 요소를 0번 인덱스부터 차례차례 접근
+# li = [1,2,3,4,5,6,7,8,9,10]
+# for i in li:
+#     print(i)
 
 
-
-print("")
-# 비시퀀스 자료형에서의 for
-# 비시퀀스 자료형 : 순서가 없는(인덱스가 존재하지 않는) 객체 (set, dictionary)
-# set 의 경우 무작위로 접근
-# dictionary 의 경우 key에 접근
-
-
+# print("")
+# # 비시퀀스 자료형에서의 for
+# # 비시퀀스 자료형 : 순서가 없는(인덱스가 존재하지 않는) 객체 (set, dictionary)
+# # set 의 경우 무작위로 접근
+# # dictionary 의 경우 key에 접근
+# li = {1,2,3,4,5,6,7,8,9,10}
+# for i in li:
+#     print(i)
 
 print("")
 # range() 함수
@@ -42,8 +45,17 @@ print("")
 # 초깃값 생략가능 - 생략하면 0부터 시작
 # 종료값 생략 불가능
 # 증감값 생략가능 - 생략하면 +1
+for i in range(5):        # 0부터 4까지 5번 반복. 세로 방향
+    for j in range(5):    # 0부터 4까지 5번 반복. 가로 방향
+        if j <= i:                # 세로 방향 변수 i만큼
+            print('*', end='')    # 별 출력. end에 ''를 지정하여 줄바꿈을 하지 않음
+    print()
 
-
+x = int(input("줄 수를 입력하시오 : "))
+for i in range(1, x+1):
+    for j in range(i):
+        print("*",end="")
+        print()
 
 print("")
 # 리스트 내포
@@ -55,7 +67,6 @@ print("")
 print("")
 # for 문 예제 1
 # 두 정수 n1, n2 를 입력받고 n1 <= a < n2 에 해당하는 a의 합을 출력하시오.
-
 
 
 print("")

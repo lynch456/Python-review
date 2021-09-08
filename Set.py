@@ -22,37 +22,47 @@
 print("")
 # 세트 예제 1
 # 리스트 변수 height = [183, 173, 166, 184, 176, 173, 176]의 중복을 제거하여 height_s 에 저장하고 출력하시오.
-height = [183, 173, 166, 184, 176, 173, 176]
-height_s = set(height)
-print(height_s)
+# height = [183, 173, 166, 184, 176, 173, 176]
+# height_s = set(height)
+# print(height_s)
 
-print("")
-# 세트 예제 2
-# 키를 입력 받아 세트 예제 1에서 작성한 height_s에 중복을 제거하여 저장하고 출력하시오.
+# print("")
+# # 세트 예제 2
+# # 키를 입력 받아 세트 예제 1에서 작성한 height_s에 중복을 제거하여 저장하고 출력하시오.
+# height_i = int(input("키를 입력하시오 : "))
+# height_s.add(height_i)
+# print(height_s)
 
-
-print("")
-# 세트 예제 3
-# 키를 입력 받아 세트 예제 1에서 작성한 height_s에서 만약 요소가 없더라도
-# 오류가 발생하지 않도록하여 삭제하고 출력하시오.
-
+# print("")
+# # 세트 예제 3
+# # 키를 입력 받아 세트 예제 1에서 작성한 height_s에서 만약 요소가 없더라도
+# # 오류가 발생하지 않도록하여 삭제하고 출력하시오.
+# height_i = int(input("키를 입력하시오 : "))
+# height_s.discard(height_i)
+# print(height_s)
 
 print("")
 # 세트 예제 4
 # 리스트 변수 milk = ['딸기우유', '초코우유', '딸기우유', '흰우유', '초코우유', '커피우유']의 중복을 제거하여
 # milk_s 에 저장하고 출력하시오.
-
+milk = ['딸기우유', '초코우유', '딸기우유', '흰우유', '초코우유', '커피우유']
+milk_s = set(milk)
+print(milk_s)
 
 print("")
 # 세트 예제 5
 # 우유 종류를 입력 받아 세트 예제 4에서 작성한 milk_s 중복을 제거하여 저장하고 출력하시오.
-
+milk_i = input("우유의 종류를 입력하시오 : ")
+milk_s.add(milk_i)
+print(milk_s)
 
 print("")
 # 세트 예제 6
 # 우유 종류를 입력 받아 세트 예제 4에서 작성한 milk_s 만약 요소가 없더라도
 # 오류가 발생하지 않도록하여 삭제하고 출력하시오.
-
+milk_i = input("우유의 종류를 입력하시오 : ")
+milk_s.discard(milk_i)
+print(milk_s)
 
 print("")
 # Set 연산 (집합 연산자 및 함수)
